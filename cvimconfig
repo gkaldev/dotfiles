@@ -1,0 +1,6 @@
+set cncpcompletion
+set noautofocus
+set showtabindices
+map J nextTab
+map K prevTab
+let blacklists = ["https://mail.google.com/*"]
