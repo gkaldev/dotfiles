@@ -4,3 +4,11 @@ set showtabindices
 map J nextTab
 map K previousTab
 let blacklists = ["https://mail.google.com/*"]
+let completionengines = ["google", "wikipedia", "amazon", "youtube"]
+let searchengine ghub = "https://github.com/search?utf8=✓&q=%s"
+let searchalias g = "google"
+map gb :buffer<Space>
+map <C-u> rootFrame
+map <M-h> previousTab
+map <C-d> scrollPageDown
+map <C-e> scrollPageUp
