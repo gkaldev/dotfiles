@@ -1,6 +1,5 @@
 set cncpcompletion
 set noautofocus
-set showtabindices
 map J nextTab
 map K previousTab
 let blacklists = ["https://mail.google.com/*"]
