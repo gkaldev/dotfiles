@@ -7,7 +7,8 @@ let completionengines = ["google", "wikipedia", "amazon", "youtube"]
 let searchengine ghub = "https://github.com/search?utf8=✓&q=%s"
 let searchalias g = "google"
 map gb :buffer<Space>
-map <C-u> rootFrame
+map <C-i> rootFrame
 map <M-h> previousTab
 map <C-d> scrollPageDown
 map <C-e> scrollPageUp
+map <C-u> scrollPageUp
