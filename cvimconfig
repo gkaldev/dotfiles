@@ -12,29 +12,3 @@ map <M-h> previousTab
 map <C-d> scrollPageDown
 map <C-e> scrollPageUp
 map <C-u> scrollPageUp
-
-" To be used by the code block
-set hintset_a
-
-" Create a code block named switchHintCharacters
-switchHintCharacters -> {{
-  // We are now in JavaScript mode
-
-  // Settings are contained in an object named settings
-  settings.hintset_a = !settings.hintset_a;
-  if (settings.hintset_a) {
-    settings.hintcharacters = 'abc'; // equivalent to "let hintcharacters = 'abc'"
-  } else {
-    settings.hintcharacters = 'xyz';
-  }
-
-  // Propagate the current settings to all tabs for the
-  // rest of the session
-  PORT('syncSettings', { settings: settings });
-
-  // Display cVim's status bar for 2 seconds.
-  Status.setMessage('Hint Set: ' + (true ? 'a' : 'b'), 2);
-}}
-
-" Run the JavaScript block
-map <Tab> :call switchHintCharacters<CR>
