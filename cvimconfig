@@ -8,7 +8,8 @@ let searchengine ghub = "https://github.com/search?utf8=✓&q=%s"
 let searchalias g = "google"
 map gb :buffer<Space>
 map <C-i> rootFrame
-map <M-h> previousTab
+map <A-)> previousTab
+map <A-(> nextTab
 map <C-d> scrollPageDown
 map <C-e> scrollPageUp
 map <C-u> scrollPageUp
