@@ -1,7 +1,5 @@
 set cncpcompletion
 set noautofocus
-map J nextTab
-map K previousTab
 let blacklists = ["https://mail.google.com/*", "https://docs.google.com", "https://inbox.google.com"]
 let completionengines = ["google", "wikipedia", "amazon", "youtube"]
 let searchengine ghub = "https://github.com/search?utf8=✓&q=%s"
@@ -13,3 +11,14 @@ map <A-(> nextTab
 map <C-d> scrollPageDown
 map <C-e> scrollPageUp
 map <C-u> scrollPageUp
+set autoupdategist
+let mapleader = ","
+let hintcharacters = "asdfgqwertcvbhjklnmyuiop"
+
+"can type chars to filter link hints
+set typelinkhints
+"switch between numeric and alphanum
+map <C-i> :set numerichints!<CR>
+
+" alias ':g' to ':tabnew google'
+command g tabnew google
