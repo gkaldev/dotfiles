@@ -8,6 +8,8 @@ map gb :buffer<Space>
 map <C-i> rootFrame
 map <A-)> previousTab
 map <A-(> nextTab
+map J nextTab
+map K previousTab
 map <C-d> scrollPageDown
 map <C-e> scrollPageUp
 map <C-u> scrollPageUp
