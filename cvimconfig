@@ -22,5 +22,4 @@ set typelinkhints
 "switch between numeric and alphanum
 map <C-i> :set numerichints!<CR>
 
-" alias ':g' to ':tabnew google'
-command g tabnew google
+map O :tabnew 
