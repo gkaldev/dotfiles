@@ -22,4 +22,4 @@ set typelinkhints
 "switch between numeric and alphanum
 map <C-i> :set numerichints!<CR>
 
-map O :tabnew<space>
+map O :tabnew<Space>
